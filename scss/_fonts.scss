@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Arkhip";
+    // src: url("../fonts/Arkhip.eot");
+    // src: url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+    // url("../fonts/CeraPro-Medium.woff") format("woff"),
+   src: url("../fonts/Arkhip_font.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+.game-h1{
+    font-size:35px;
+    @media  screen and (min-width:768px) {
+        font-size:55px;
+    }
+}
+.game-p1{
+    font-size:14px;
+    @media  screen and (min-width:768px) {
+        font-size:18px;
+    }
+}
+.game-p2{
+    font-size:12px;
+    @media  screen and (min-width:768px) {
+        font-size:14px;
+    }
+}
+.game-h2{
+    font-size:80px;
+    @media  screen and (min-width:768px) {
+        font-size:100px;
+    }
+}

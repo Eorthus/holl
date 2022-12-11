@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Holl</title>
+    <meta name="description" content="Holl Cyber Lounge">
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body style="position: relative">
+    <canvas class="canvas-cursor"></canvas>
+    <div class="page-changer"></div>
+    <div id="viewport">
+        <script>
+            let content = document.querySelector('#viewport');
+            content.style.display = 'none';
+        </script>
+
+        <div class="smooth-scroll body-index">
+
+            <div class="landing">
+
+                <header class="content header game-p1">
+                    <div class="header__content">
+                        <a class="header__phone" href="tel:8 (800) 999-99-99">
+                            <img class="lazyload" src="./img/phone.png" alt="phone">
+                            <span class="game-p1">8 (800) 999-99-99</span>
+                        </a>
+                        <a class="header__login btn game-p1 change club-page">
+                            Вход
+                            <span class="top"></span>
+                            <span class="left"></span>
+                            <span class="bottom"></span>
+                            <span class="right"></span>
+                        </a>
+
+                        <div class="dropdown header__lang">
+                            <button class="dropdown-toggle header__currlang lang" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/ru.jpg" alt="rus" id="ru">
+                            </button>
+                            <ul class="dropdown-menu header__listlang">
+                                <li><button class="dropdown-item lang">
+                                        <img src="./img/en.jpg" alt="en" id="en">
+                                    </button></li>
+                                <li><button class="dropdown-item lang">
+                                        <img src="./img/tu.png" alt="tu" id="tu">
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header__menu">
+                        <a class="header__order btn game-p1 change kitchen_page">
+                            Кухня
+                            <span class="top"></span>
+                            <span class="left"></span>
+                            <span class="bottom"></span>
+                            <span class="right"></span>
+                        </a>
+                    </div>
+                </header>
+                <main>
+                    <section class="description content">
+                        <div class="description__container parallax">
+                            <div class="description__logo white parallax-layer">
+                                <img class="lazyload" src="./img/Logo_White.svg" alt="logo">
+                            </div>
+                            <div class="description__logo black parallax-layer">
+                                <img class="lazyload" src="./img/Logo_Black2.svg" alt="logo">
+                            </div>
+                            <div class="description__menu">
+                                <a class="description__order btn game-p1 change club-page">
+                                    Войти в клуб
+                                    <span class="top"></span>
+                                    <span class="left"></span>
+                                    <span class="bottom"></span>
+                                    <span class="right"></span>
+                                </a>
+                            </div>
+                            <span class="description__club game-p1">Членство клуба снижает стоимость посещения</span>
+                        </div>
+
+                    </section>
+
+                    <section class="hall game-p1">
+                        <img class="cloud quadro lazyload" src="./img/round.svg">
+                        <div class="hall__text content">
+                            <h2 class="hall__title game-p1">01 Интерьер</h2>
+
+                            <span class="hall__h game-h1">Неоновый</span>
+                            <span class="hall__h game-h1">Стиль</span>
+                        </div>
+                        <span class="hall__backtitle game-h2">Интерьер</span>
+                        <div class="hall__slider">
+                            <div> <img class="lazyload" src="./img/slider10.jpg"></div>
+                            <div> <img class="lazyload" src="./img/slider.jpg"></div>
+                            <div> <img class="lazyload" src="./img/slider2.jpg"></div>
+
+                            <div> <img class="lazyload" src="./img/slider5.jpg"></div>
+                            <div> <img class="lazyload" src="./img/slider6.jpg"></div>
+                            <div> <img class="lazyload" src="./img/slider8.jpg"></div>
+                            <div> <img class="lazyload" src="./img/slider9.jpg"></div>
+
+                        </div>
+
+                        <div class="hall__btn content">
+                            <a class="btn game-p1 change club-page">
+                                Войти в клуб
+                                <span class="top"></span>
+                                <span class="left"></span>
+                                <span class="bottom"></span>
+                                <span class="right"></span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="equip game-p1">
+                        <img class="cloud rectangle lazyload" src="./img/round.svg">
+                        <div class="equip__text content">
+                            <h2 class="equip__title game-p1">02 Техника</h2>
+
+                            <span class="equip__h game-h1">Новейшая</span>
+                            <span class="equip__h game-h1">закупка</span>
+                            <ul class="equip__info">
+                                <li>Intel Core i5 10400</li>
+                                <li>16gb ram</li>
+                                <li>RTX 3060</li>
+                                <li>27" Full HD 165hz</li>
+                            </ul>
+                            <div class="equip__btn">
+                                <a class="btn game-p1 change club-page">
+                                    Забронировать
+                                    <span class="top"></span>
+                                    <span class="left"></span>
+                                    <span class="bottom"></span>
+                                    <span class="right"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <span class="equip__backtitle game-h2">Техника</span>
+                        <div class="equip__media">
+                            <div class="equip__img equip1">
+                                <img class="lazyload" src="./img/2340136.png" alt="">
+                            </div>
+                            <div class="equip__img equip2">
+                                <img class="lazyload" src="./img/pc2.jpg" alt="">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="kitchen">
+                        <!-- <img class="cloud primo" src="./img/primo.svg"> -->
+                        <div class="kitchen__text content">
+                            <h2 class="kitchen__title game-p1">03 Кухня</h2>
+                            <span class="kitchen__h game-h1">Закуски</span>
+                            <span class="kitchen__h game-h1">Напитки</span>
+                            <span class="kitchen__h game-h1">Кальяны</span>
+                            <span class="kitchen__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Laboriosam minima saepe quidem quos, perspiciatis ullam delectus dolore blanditiis est
+                                deserunt omnis, at ipsum ratione? Rem quisquam minus provident velit dolore!</span>
+                            <div class="kitchen__menu">
+                                <a class="kitchen__order btn game-p1 change kitchen_page">
+                                    открыть меню
+                                    <span class="top"></span>
+                                    <span class="left"></span>
+                                    <span class="bottom"></span>
+                                    <span class="right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <span class="kitchen__backtitle game-h2">Кухня</span>
+                        <div class="kitchen__photos">
+                            <div class="kitchen__img kitchen1">
+                                <img class="lazyload" src="./img/food2.jpg" alt="food">
+                            </div>
+                            <div class="kitchen__img kitchen2">
+                                <img class="lazyload" src="./img/hookah2.jpg" alt="hookah">
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="price">
+                        <img class="cloud round lazyload" src="./img/round.svg">
+                        <div class="price__text content">
+                            <h2 class="price__title game-p1">04 Тарифы</h2>
+
+                            <span class="price__h game-h1">Гибкий</span>
+                            <span class="price__h game-h1">прайс</span>
+                            <span class="hall__about">Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+                        </div>
+                        <span class="price__backtitle game-h2">Тарифы</span>
+                        <div class="price__table content">
+                            <ul class="price__ul">
+                                <li class="price__item">
+                                    <p class="price__time">
+                                        1 час
+                                    </p>
+                                    <p class="price__sum game-h1">
+                                        110
+                                    </p>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__time">
+                                        Утро с 8 до 12
+                                    </p>
+                                    <p class="price__sum game-h1">
+                                        200
+                                    </p>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__time">
+                                        День с 12 до 18
+                                    </p>
+                                    <p class="price__sum game-h1">
+                                        350
+                                    </p>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__time">
+                                        Вечер с 18 до 22
+                                    </p>
+                                    <p class="price__sum game-h1">
+                                        400
+                                    </p>
+                                </li>
+                                <li class="price__item">
+                                    <p class="price__time">
+                                        Ночь с 22 до 8
+                                    </p>
+                                    <p class="price__sum game-h1">
+                                        500
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price__btn content">
+                            <a class=" btn game-p1 change club-page">
+                                Войти в клуб
+                                <span class="top"></span>
+                                <span class="left"></span>
+                                <span class="bottom"></span>
+                                <span class="right"></span>
+                            </a>
+                        </div>
+                    </section>
+
+
+
+
+                    <section class="booking parallax_book">
+                        <img class="booking__img lazyload parallax-layer_book" src="./img/back.jpg" alt="background">
+                        <form class="booking__form content">
+                            <h2 class="booking__title game-h3">Войти в клуб</h2>
+                            <div class="booking__input phone">
+                                <input id="phone" class="phone" type="phone" placeholder="Телефон">
+                            </div>
+                            <div class="booking__btn btn auth">
+                                Отправить код
+                                <span class="top"></span>
+                                <span class="left"></span>
+                                <span class="bottom"></span>
+                                <span class="right"></span>
+                            </div>
+                            <div class="booking__input password hide">
+                                <input id="password" type="password" placeholder="Введите код">
+                            </div>
+                            <div class="booking__pass btn again hide game-p1">
+                                Повторить
+                                <span class="top"></span>
+                                <span class="left"></span>
+                                <span class="bottom"></span>
+                                <span class="right"></span>
+                            </div>
+                            <span class="booking__club game-p1">Членство клуба снижает стоимость посещения</span>
+                        </form>
+                    </section>
+                    <secttion class="map">
+                        <div class="map__container">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A5fec9ea9e6093931d5ff161aae801e570f6fad7a9b7bd5cf6e9bf0fc71d2de82&amp;source=constructor"
+                                width="100%" height="600" frameborder="0"></iframe>
+
+                        </div>
+                        <div class="map__contacts content">
+                            <span class="map__address-title">Адрес</span>
+                            <a class="map__address" href="https://yandex.ru/maps/-/CCUZYGW8wA">г. Санкт-Петербург, ул.
+                                Садовая 67</a>
+                            <span class="map__time">24 часа</span>
+                            <span class="map__contact-title">Контакты</span>
+                            <a class="map__phone" href="tel:+79999999999">+7(999)999-99-99</a>
+                            <div class="map__social">
+                                <a href="#" class="footer__icon">
+                                    <img class="lazyload" src="./img/tg.svg" alt="">
+                                </a>
+                                <a href="#" class="footer__icon">
+                                    <img class="lazyload" src="./img/wht.svg" alt="">
+                                </a>
+                                <a href="#" class="footer__icon">
+                                    <img class="lazyload" src="./img/inst.svg" alt="">
+                                </a>
+                                <a href="#" class="footer__icon">
+                                    <img class="lazyload" src="./img/vk.svg" alt="">
+                                </a>
+                                <!-- icons from icons8.ru <a target="_blank" href="https://icons8.com/icon/101137/vk-в-круге">VK в круге</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                            </div>
+                        </div>
+                    </secttion>
+                </main>
+                <footer class="footer content">
+                    <a class="footer__logo">
+                        <img class="lazyload" src="./img/Logo_White.svg" alt="">
+                    </a>
+                    <div class="footer__contacts">
+                        <a class="footer__address" href="https://yandex.ru/maps/-/CCUZAHC21C">г.Санкт-Петербург, ул.
+                            Большая Морская 67</a>
+                        <p class="footer_time">24 часа</p>
+                    </div>
+                    <div class="footer__media">
+                        <a class="footer__phone" href="tel:8 (800) 999-99-99">
+                            <img class="lazyload" src="./img/phone.png" alt="phone">
+                            <span class="game-p1">8 (800) 999-99-99</span>
+                        </a>
+                        <a href="mailto:test@test.ru">test@test.ru</a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/tg.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/wht.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/inst.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/vk.svg" alt="">
+                        </a>
+                        <!-- icons from icons8.ru <a target="_blank" href="https://icons8.com/icon/101137/vk-в-круге">VK в круге</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </div>
+                    <p class="game-p2 footer__author">Разработано в <a href="https://it.mastervisor.ru/" target="_blank">Mastervisor</a></p>
+   
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.min.js"></script>
+    <script src="./js/components/gsap/minified/gsap.min.js"></script>
+    <script src="./js/components/gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

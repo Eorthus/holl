@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Holl</title>
+    <meta name="description" content="Holl Cyber Login">
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body style="position: relative" class="parallax_book">
+    <!-- переход -->
+    <div class="page-changer"></div>
+    <!-- фон -->
+    <img class="booking__img lazyload parallax-layer_book" src="./img/back.jpg" alt="background">
+    <div id="viewport">
+        <!-- скрипт не трогать -->
+        <script>
+            let content = document.querySelector('#viewport');
+            content.style.display = 'none';
+        </script>
+
+        <div class="smooth-scroll">
+            <div class="booking-page">
+                <header class="content header game-p1">
+                    <div class="header__content">
+                        <a class="header__phone" href="tel:8 (800) 999-99-99">
+                            <img class="lazyload" src="./img/phone.png" alt="phone">
+                            <span class="game-p1">8 (800) 999-99-99</span>
+                        </a>
+                        <a class="header__login btn game-p1 change kitchen_page">
+                            Кухня
+                            <span class="top"></span>
+                            <span class="left"></span>
+                            <span class="bottom"></span>
+                            <span class="right"></span>
+                        </a>
+                        <div class="dropdown header__lang">
+                            <button class="dropdown-toggle header__currlang lang" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/ru.jpg" alt="rus" id="ru">
+                            </button>
+                            <ul class="dropdown-menu header__listlang">
+                                <li><button class="dropdown-item lang">
+                                        <img src="./img/en.jpg" alt="en" id="en">
+                                    </button></li>
+                                <li><button class="dropdown-item lang">
+                                        <img src="./img/tu.png" alt="tu" id="tu">
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <a class="header__logo change main-page">
+                            <img class="lazyload" src="./img/Logo_White.svg" alt="logo">
+                        </a>
+                    </div>
+                </header>
+
+                <main>
+                    <section class="booking">
+
+                        <form class="booking__form content">
+                            <h2 class="booking__title game-h3 club-page">Войти в клуб</h2>
+                            <div class="booking__input phone">
+                                <input id="phone" class="phone" type="phone" placeholder="Телефон">
+                            </div>
+                            <div class="booking__btn btn auth game-p1">
+                                Отправить код
+                                <span class="top"></span>
+                                <span class="left"></span>
+                                <span class="bottom"></span>
+                                <span class="right"></span>
+                            </div>
+                            <div class="booking__input password hide">
+                                <input id="password" type="password" placeholder="Введите код">
+                            </div>
+                            <a class="booking__pass btn hide again game-p1">
+                                Повторить
+                                <span class="top"></span>
+                                <span class="left"></span>
+                                <span class="bottom"></span>
+                                <span class="right"></span>
+                            </a>
+                            <span class="booking__club game-p1">Членство клуба снижает стоимость посещения</span>
+                        </form>
+                    </section>
+
+                </main>
+
+   
+            </div>
+        </div>
+    </div>
+    <canvas class="canvas-cursor"></canvas>
+    <script type="text/javascript" src="./js/components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.min.js"></script>
+    <script src="./js/components/gsap/minified/gsap.min.js"></script>
+    <script src="./js/components/gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

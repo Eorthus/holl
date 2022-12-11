@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  left: 0;
+  right: 0;
+  margin: auto;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  overflow: visible !important;
+  top: 0;
+  @media (min-width: 768px) {
+    height: 80px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__login {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+  &__phone {
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    img {
+      width: 25px;
+      margin-right: 5px;
+    }
+  }
+  &__menu {
+    pointer-events: all;
+    z-index: 4;
+    height: 80%;
+    img {
+      height: 100%;
+    }
+    @media (min-width:768px){
+height:100%;
+    }
+  }
+  &__lang {
+    z-index: 1;
+    img {
+      width: 25px;
+    }
+    .dropdown-item {
+      padding: 0;
+      &::after {
+        vertical-align: unset;
+        margin-left: 0;
+      }
+    }
+  }
+  &__currlang {
+    background: transparent;
+    border: none;
+    color: $white;
+    pointer-events: all;
+    margin-left: 10px;
+    img {
+      pointer-events: all;
+    }
+    @media (min-width: 768px) {
+      margin-left: 20px;
+    }
+  }
+  &__listlang {
+    background: transparent;
+    min-width: 100%;
+    border: none;
+    box-shadow: none;
+    pointer-events: all;
+    flex-direction: column;
+    li {
+      padding-bottom: 5px;
+      pointer-events: all;
+      .dropdown-item {
+        pointer-events: all;
+        transition:0.5s;
+        &:hover, &:active{
+          background-color:transparent;
+          transform: scale(1.05);
+        }
+      }
+      img {
+        pointer-events: all;
+      }
+    }
+  }
+}

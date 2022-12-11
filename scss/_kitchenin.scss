@@ -1,0 +1,204 @@
+.kitchenin{
+    &__nav{
+        top:135px;
+      #menu  ul{
+            padding-left:0;
+        }
+    }
+    &__content{
+        &:first-child{
+            padding-top:195px;
+        }
+    }
+    &__attention{
+        color:$gray_light;
+    }
+}
+.kitchen-modal{
+    justify-content: center;
+  &__content{
+    background-color: $primary;
+    box-shadow: 0 0 5px $white, 0 0 25px $white, 0 0 50px $white, 0 0 200px $white;
+    max-width: 300px;
+    width: 100%;
+    @media (min-width:768px){
+        min-width:500px;
+    }
+  }
+  &__body{
+    @media (min-width:768px){
+        padding:30px;
+    }
+  }
+  &__close{
+    background: transparent url('../img/cross.svg') center/1em auto no-repeat;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+  }
+  &__item{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    a{
+        display: flex;
+    padding: 0;
+    height: 100%;
+    }
+}
+&__img{
+    height: 100px;
+    width: 100px;
+    pointer-events:all;
+    overflow:hidden;
+    img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        transition:0.5s;
+        -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 90%);
+    }
+    &:hover{
+img{
+    transform: scale(1.1);
+}
+    }
+}
+&_ul{
+    overflow: scroll;
+    max-height: 300px;
+    margin-bottom: 0;
+}
+&__info{
+    display: flex;
+    flex:1;
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+&__description{
+    color: $gray_light;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex:1;
+}
+&__btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events:all;
+    margin-left: auto;
+}
+&__title{
+    display: block;
+}
+&__price{
+    margin-top: 5px;
+    display: block;
+    color: $gray_light;
+}
+&__count{
+    margin: 10px;
+    color: $gray_light;
+}
+&__h{
+    margin-bottom: 10px;
+    display: block;
+}
+&__btn{
+    display: flex;
+  }
+  &__link{
+    margin:auto;
+  }
+  
+  .order-slider__h{
+    text-align: left;
+      display: block;
+  }
+  
+    ul li {
+      position: relative;
+      margin-bottom: 10px;
+    }
+  ul li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    pointer-events:all;
+  }
+  
+  ul li label{
+    display: block;
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    padding-left: 30px;
+    padding-top: 8px;
+    color:$gray_light;
+    pointer-events:all;
+  }
+  
+  ul li:hover label{
+      color: $gray_light;
+  }
+  
+  ul li .check{
+    display: block;
+    position: absolute;
+    border: 2px solid $gray_light;
+    top: 7px;
+    height: 25px;
+    width: 25px;
+      z-index: 5;
+      transition: border .25s linear;
+      -webkit-transition: border .25s linear;
+    pointer-events:all;
+  }
+  
+  
+  ul li .check::before {
+    display: block;
+    position: absolute;
+      content: '✓';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+      transition: 0.25s linear;
+      -webkit-transition:0.25s linear;
+    font-size: 30px;
+      top: -10px;
+      visibility:hidden;
+  }
+  input[type=radio]:checked ~ .check {
+    border: 2px solid $white;
+  }
+  input[type=radio]:checked ~ label{
+    color: $white;
+  }
+  input[type=radio]:checked ~ .check::before{
+    visibility:visible;
+  }
+  &__payment{
+    ul{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      flex-direction: column;
+      @media (min-width:768px){
+        flex-direction:row;
+      }
+    }
+    li{
+      padding-right:5px;
+      padding-left:5px;
+      @media (min-width:768px){
+        padding-right:10px;
+        padding-left:10px;
+      }
+    }
+  }
+}

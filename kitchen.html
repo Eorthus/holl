@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Holl</title>
+    <meta name="description" content="Holl Cyber Lounge">
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body style="position: relative">
+    <!-- переход -->
+    <div class="page-changer"></div>
+    <div id="viewport">
+        <!-- скрипт, не трогать -->
+        <script>
+            let content = document.querySelector('#viewport');
+            content.style.display = 'none';
+        </script>
+
+        <div class="kitchen-page">
+            <!-- скролл наверх -->
+            <a class="kitchen-page_scroll game-p1" href="#food">
+                <span>˄</span>
+            </a>
+            <!-- меню кухня -->
+            <div class="kitchen-page__navbar kitchen-scroll content game-p1">
+                <a class="header__login btn game-p1 change main-page back-btn">
+                    ˂
+                    <span class="top"></span>
+                    <span class="left"></span>
+                    <span class="bottom"></span>
+                    <span class="right"></span>
+                </a>
+                <div id="menu">
+                    <ul>
+                        <li><a class="active kitchen-page__navlink first-link" href="#food">Закуски</a>
+                        </li>
+                        <li><a class="kitchen-page__navlink" href="#drink">Напитки</a>
+                        </li>
+                        <li><a class="kitchen-page__navlink" href="#hookah">Кальяны</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="kitchen-page_overflow">
+
+                </div>
+            </div>
+            <div class="smooth-scroll kitchen-page_index">
+
+                <header class="content header game-p1" id="top">
+                    <div class="header__content">
+                        <a class="header__phone" href="tel:8 (800) 999-99-99">
+                            <img class="lazyload" src="./img/phone.png" alt="phone">
+                            <span class="game-p1">8 (800) 999-99-99</span>
+                        </a>
+                        <a class="header__login btn game-p1 change club-page">
+                            Вход
+                            <span class="top"></span>
+                            <span class="left"></span>
+                            <span class="bottom"></span>
+                            <span class="right"></span>
+                        </a>
+                        <div class="dropdown header__lang">
+                            <button class="dropdown-toggle header__currlang lang" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/ru.jpg" alt="rus" id="ru">
+                            </button>
+                            <ul class="dropdown-menu header__listlang">
+                                <li><button class="dropdown-item lang">
+                                        <img src="./img/en.jpg" alt="en" id="en">
+                                    </button></li>
+                                <li><button class="dropdown-item lang">
+                                        <img src="./img/tu.png" alt="tu" id="tu">
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <a class="header__logo change main-page">
+                            <img class="lazyload" src="./img/Logo_White.svg" alt="logo">
+                        </a>
+                    </div>
+                </header>
+
+                <main>
+
+                    <div class="kitchen-page__main content">
+                        <section class="kitchen-page__content" id="food">
+                            <span class="kitchen-page__h game-h1">
+                                Закуски
+                            </span>
+                            <div class="kitchen-page__list">
+                                <ul class="row">
+                                    <li class="kitchen-page__item game-p1 col-12 col-md-4 col-lg-3">
+                                        <a>
+                                            <div class="kitchen-page__img">
+                                                <img class="lazyload" src="./img/pizza.jpg">
+                                            </div>
+                                            <div class="kitchen-page__info">
+                                                <span class="kitchen-page__title">
+                                                    Название
+                                                </span>
+                                                <span class="kitchen-page__description game-p2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Setibus
+                                                    commodi earum libero repellendus suscipit ipsa temporibus porro.
+                                                    Laudantium beatae ea accusamus dolores.
+                                                </span>
+                                                <div class="kitchen-page__btn">
+                                                    <span class="kithcne-page__price">
+                                                        1000 руб
+                                                    </span>
+                                                    <button class="kitchen-page__add btn">
+                                                        Добавить
+                                                        <span class="top"></span>
+                                                        <span class="left"></span>
+                                                        <span class="bottom"></span>
+                                                        <span class="right"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="kitchen-page__item game-p1 col-12 col-md-4 col-lg-3">
+                                        <a>
+                                            <div class="kitchen-page__img">
+                                                <img class="lazyload" src="./img/burger.jpg">
+                                            </div>
+                                            <div class="kitchen-page__info">
+                                                <span class="kitchen-page__title">
+                                                    Название
+                                                </span>
+                                                <span class="kitchen-page__description game-p2">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo aut
+                                                    dicta
+                                                    quasi iusto laudantium saepe, exercitationem a maxime temporibus
+                                                    necessitatibus eos voluptates illo quisquam delectus dolorum
+                                                    accusamus
+                                                    eaque! Laudantium, iste?
+                                                </span>
+                                                <div class="kitchen-page__btn">
+                                                    <span class="kithcne-page__price">
+                                                        1000 руб
+                                                    </span>
+                                                    <button class="kitchen-page__add btn">
+                                                        Добавить
+                                                        <span class="top"></span>
+                                                        <span class="left"></span>
+                                                        <span class="bottom"></span>
+                                                        <span class="right"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="kitchen-page__content" id="drink">
+                            <span class="kitchen-page__h game-h1">
+                                Напитки
+                            </span>
+                            <img class="cloud kitchen-round lazyload" src="./img/round.svg">
+                            <div class="kitchen-page__list">
+                                <ul class="row">
+                                    <li class="kitchen-page__item game-p1 col-12 col-md-4 col-lg-3">
+                                        <a>
+                                            <div class="kitchen-page__img">
+                                                <img class="lazyload" src="./img/lemonad.jpg">
+                                            </div>
+                                            <div class="kitchen-page__info">
+                                                <span class="kitchen-page__title">
+                                                    Название
+                                                </span>
+                                                <span class="kitchen-page__description game-p2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                                    nesciunt
+                                                    pariatur in qui ut, reiciendis quam necessitatibus commodi earum
+                                                    libero
+                                                    repellendus suscipit ipsa temporibus porro. Laudantium beatae ea
+                                                    accusamus dolores.
+                                                </span>
+                                                <div class="kitchen-page__btn">
+                                                    <span class="kithcne-page__price">
+                                                        1000 руб
+                                                    </span>
+                                                    <button class="kitchen-page__add btn">
+                                                        Добавить
+                                                        <span class="top"></span>
+                                                        <span class="left"></span>
+                                                        <span class="bottom"></span>
+                                                        <span class="right"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="kitchen-page__item game-p1 col-12 col-md-4 col-lg-3">
+                                        <a>
+                                            <div class="kitchen-page__img">
+                                                <img class="lazyload" src="./img/redbull.jpg">
+                                            </div>
+                                            <div class="kitchen-page__info">
+                                                <span class="kitchen-page__title">
+                                                    Название
+                                                </span>
+                                                <span class="kitchen-page__description game-p2">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo aut
+                                                    dicta
+                                                    quasi iusto laudantium saepe, exercitationem a maxime temporibus
+                                                    necessitatibus eos voluptates illo quisquam delectus dolorum
+                                                    accusamus
+                                                    eaque! Laudantium, iste?
+                                                </span>
+                                                <div class="kitchen-page__btn">
+                                                    <span class="kithcne-page__price">
+                                                        1000 руб
+                                                    </span>
+                                                    <button class="kitchen-page__add btn">
+                                                        Добавить
+                                                        <span class="top"></span>
+                                                        <span class="left"></span>
+                                                        <span class="bottom"></span>
+                                                        <span class="right"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="kitchen-page__content" id="hookah">
+                            <span class="kitchen-page__h game-h1">
+                                Кальян
+                            </span>
+                            <div class="kitchen-page__list">
+                                <ul class="row">
+                                    <li class="kitchen-page__item game-p1 col-12 col-md-4 col-lg-3">
+                                        <a>
+                                            <div class="kitchen-page__img">
+                                                <img class="lazyload" src="./img/hookah1.jpg">
+                                            </div>
+                                            <div class="kitchen-page__info">
+                                                <span class="kitchen-page__title">
+                                                    Название
+                                                </span>
+                                                <span class="kitchen-page__description game-p2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                                    nesciunt
+                                                    pariatur in qui ut, reiciendis quam necessitatibus commodi earum
+                                                    libero
+                                                    repellendus suscipit ipsa temporibus porro. Laudantium beatae ea
+                                                    accusamus dolores.
+                                                </span>
+                                                <div class="kitchen-page__btn">
+                                                    <span class="kithcne-page__price">
+                                                        1000 руб
+                                                    </span>
+                                                    <button class="kitchen-page__add btn">
+                                                        Добавить
+                                                        <span class="top"></span>
+                                                        <span class="left"></span>
+                                                        <span class="bottom"></span>
+                                                        <span class="right"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="kitchen-page__item game-p1 col-12 col-md-4 col-lg-3">
+                                        <a>
+                                            <div class="kitchen-page__img">
+                                                <img class="lazyload" src="./img/hookah22.jpg">
+                                            </div>
+                                            <div class="kitchen-page__info">
+                                                <span class="kitchen-page__title">
+                                                    Название
+                                                </span>
+                                                <span class="kitchen-page__description game-p2">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo aut
+                                                    dicta
+                                                    quasi iusto laudantium saepe, exercitationem a maxime temporibus
+                                                    necessitatibus eos voluptates illo quisquam delectus dolorum
+                                                    accusamus
+                                                    eaque! Laudantium, iste?
+                                                </span>
+                                                <div class="kitchen-page__btn">
+                                                    <span class="kithcne-page__price">
+                                                        1000 руб
+                                                    </span>
+                                                    <button class="kitchen-page__add btn">
+                                                        Добавить
+                                                        <span class="top"></span>
+                                                        <span class="left"></span>
+                                                        <span class="bottom"></span>
+                                                        <span class="right"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="kitchenin__attention game-p2">
+                                *Кухня и Кальян работют раздельно
+                            </span>
+                        </section>
+                    </div>
+                </main>
+
+                <footer class="footer content">
+                    <a class="footer__logo">
+                        <img class="lazyload" src="./img/Logo_White.svg" alt="">
+                    </a>
+                    <div class="footer__contacts">
+                        <a class="footer__address" href="https://yandex.ru/maps/-/CCUZAHC21C">г.Санкт-Петербург, ул.
+                            Большая Морская 67</a>
+                        <p class="footer_time">24 часа</p>
+                    </div>
+                    <div class="footer__media">
+                        <a class="footer__phone" href="tel:8 (800) 999-99-99">
+                            <img class="lazyload" src="./img/phone.png" alt="phone">
+                            <span class="game-p1">8 (800) 999-99-99</span>
+                        </a>
+                        <a href="mailto:test@test.ru">test@test.ru</a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/tg.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/wht.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/inst.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/vk.svg" alt="">
+                        </a>
+                        <!-- icons from icons8.ru <a target="_blank" href="https://icons8.com/icon/101137/vk-в-круге">VK в круге</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </div>
+                    <p class="game-p2 footer__author">Разработано в <a href="https://it.mastervisor.ru/" target="_blank">Mastervisor</a></p>
+   
+                </footer>
+            </div>
+
+
+        </div>
+    </div>
+    <canvas class="canvas-cursor"></canvas>
+    <script type="text/javascript" src="./js/components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.min.js"></script>
+    <script src="./js/components/gsap/minified/gsap.min.js"></script>
+    <script src="./js/components/gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

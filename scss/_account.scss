@@ -1,0 +1,109 @@
+.account{
+    &__table{
+        pointer-events: none;
+        color:$gray_light;
+        margin-top: 10px;
+        th{
+            pointer-events: all;
+            cursor:pointer;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__pagination{
+        li{
+            pointer-events: all;
+            color:$gray_light;
+            padding:10px;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover{
+                font-weight: bold;
+                transform: scale(1.1);
+                color:$white;
+            }
+        }
+        .active{
+            color:$white;
+            font-weight: bold;
+        }
+    }
+    &__arrow{
+        color:$white;
+    }
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+        color: $gray_light;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        position: relative;
+      }
+      &__title{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        pointer-events: none;
+      }
+      &__subtitle{
+        color:$gray_light;
+        pointer-events: none;
+      }
+      &__sum {
+        padding-right: 10px;
+        padding-left: 10px;
+        pointer-events: all;
+        transition: 0.5s;
+        display: flex;
+    flex-direction: row-reverse;
+        &:hover {
+          transform: scale(1.1);
+        }
+        @media (min-width: 768px) {
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        img {
+            width: 50px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+      }
+      &__money{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        @media (min-width:768px){
+            margin-bottom: 50px;
+        }
+      }
+      &__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      &__action{
+        margin: 5px;
+      }
+      &_cloud{
+            left: 0;
+            right: 0;
+            top: -500px;
+            margin: auto;
+            width: 100%;
+            bottom: 0;
+            opacity: 0.5;
+            max-height: 1000px;
+            z-index: -1;
+      }
+}

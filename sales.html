@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Holl</title>
+    <meta name="description" content="Holl Cyber Account">
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/components/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body style="position: relative">
+    <!-- cursor -->
+    <canvas class="canvas-cursor"></canvas>
+    <!-- переход -->
+    <div class="page-changer"></div>
+    <div id="viewport">
+            <!-- скрипт, не переставлять -->
+        <script>
+            let content = document.querySelector('#viewport');
+            content.style.display = 'none';
+        </script>
+
+        <div class="smooth-scroll body-index">
+
+            <div class="landing">
+
+                <header>
+                    <div class="header content game-p1" id="top">
+                        <div class="header__content">
+                            <a class="header__phone" href="tel:8 (800) 999-99-99">
+                                <img class="lazyload" src="./img/phone.png" alt="phone">
+                                <span class="game-p1">8 (800) 999-99-99</span>
+                            </a>
+                            <div class="dropdown header__lang">
+                                <button class="dropdown-toggle header__currlang lang" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./img/ru.jpg" alt="rus" id="ru">
+                                </button>
+                                <ul class="dropdown-menu header__listlang">
+                                    <li><button class="dropdown-item lang">
+                                            <img src="./img/en.jpg" alt="en" id="en">
+                                        </button></li>
+                                    <li><button class="dropdown-item lang">
+                                            <img src="./img/tu.png" alt="tu" id="tu">
+                                        </button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__menu">
+                            <a class="header__logo change main-page">
+                                <img class="lazyload" src="./img/Logo_White.svg" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="header-hr">
+                    <div class="account-header content">
+                        <div class="menu-changer">
+                            <ul class="menu-changer__list game-p1">
+                                <li>
+                                    <a class="menu-changer__link change order-page">
+                                        Бронирование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-changer__link change kitchenin-page">
+                                        Кухня
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-changer__link change account-page">
+                                        Аккаунт
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-changer__link change sales-page">
+                                        Акции
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-changer__logout btn game-p1 change club-page">
+                                        Выход
+                                        <span class="top"></span>
+                                        <span class="left"></span>
+                                        <span class="bottom"></span>
+                                        <span class="right"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="account-header__burger btn game-p1 change-menu menu-page">
+                            <div class="burger-menu burger-menu--closed">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <span class="top"></span>
+                            <span class="left"></span>
+                            <span class="bottom"></span>
+                            <span class="right"></span>
+                        </a>
+                        <div class="account-header__order">
+                            <a class="account-header__sum">
+                                <span class="account-header_count game-p1 change account-page">5210</span>
+                                <img src="./img/coin.png" alt="coin">
+                            </a>
+                            <a class="account-header__cart">
+                                <img src="./img/cart.png" alt="cart">
+                                <span class="account-header_num">1</span>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+
+
+                <main class="sales-padding">
+                    <section class="sales">
+                        <img class="cloud sales-cloud lazyload" src="./img/round.svg">
+                        <!-- анимация на каждый второй li по классу sales-right и sales-left поочередно -->
+                        <ul class="sales__container">
+                            <li class="sales__item sales-left">
+                                <img class="lazyload" src="./img/sale1.jpg" alt="sale">
+                            </li>
+
+                            <li class="sales__item sales-right">
+                                <img class="lazyload" src="./img/sales2.jpg" alt="sale">
+                            </li>
+                            <li class="sales__item sales-left">
+                                <img class="lazyload" src="./img/sales3.jpg" alt="sale">
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+
+
+                <footer class="footer content">
+                    <a class="footer__logo">
+                        <img class="lazyload" src="./img/Logo_White.svg" alt="">
+                    </a>
+                    <div class="footer__contacts">
+                        <a class="footer__address" href="https://yandex.ru/maps/-/CCUZAHC21C">г.Санкт-Петербург, ул.
+                            Большая Морская 67</a>
+                        <p class="footer_time">24 часа</p>
+                    </div>
+                    <div class="footer__media">
+                        <a class="footer__phone" href="tel:8 (800) 999-99-99">
+                            <img class="lazyload" src="./img/phone.png" alt="phone">
+                            <span class="game-p1">8 (800) 999-99-99</span>
+                        </a>
+                        <a href="mailto:test@test.ru">test@test.ru</a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/tg.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/wht.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/inst.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__icon">
+                            <img class="lazyload" src="./img/vk.svg" alt="">
+                        </a>
+                        <!-- icons from icons8.ru <a target="_blank" href="https://icons8.com/icon/101137/vk-в-круге">VK в круге</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </div>
+                    <p class="game-p2 footer__author">Разработано в <a href="https://it.mastervisor.ru/" target="_blank">Mastervisor</a></p>
+   
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.js"></script>
+    <script type="text/javascript" src="./js/components/slick/slick.min.js"></script>
+    <script src="./js/components/gsap/minified/gsap.min.js"></script>
+    <script src="./js/components/gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
